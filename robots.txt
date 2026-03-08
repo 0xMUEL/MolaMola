@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://0xMUEL.github.io/mola-mola-site/sitemap.xml
+Sitemap: https://0xMUEL.github.io/MolaMola/sitemap.xml
