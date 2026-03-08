@@ -286,6 +286,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
     - [All Contributors](#all-contributors)
   - [Star History](#star-history)
   - [License](#license)
+- [Originally, <strong>al-folio</strong> was based on the <a href="https://github.com/bogoli/-folio">*folio theme</a> (published by <a href="https://liabogoev.com" rel="nofollow">Lia Bogoev</a> and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.](https://github.com/bogoli/-folio)
 
 <!--te-->
 
