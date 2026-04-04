@@ -72,7 +72,40 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/MolaMola/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-building-an-open-source-automated-llm-red-teaming-framework",
+        
+          title: "Building an Open-Source Automated LLM Red-Teaming Framework",
+        
+        description: "An automated multi-agent red-teaming platform for testing LLM alignment — featuring hybrid attack flows, non-linear state machines, and prompt sandbox isolation.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/MolaMola/blog/2026/llm-redteam-framework/";
+          
+        },
+      },{id: "post-nes-game-reverse-engineering-rom-analysis-amp-game-genie-code-development",
+        
+          title: "NES Game Reverse Engineering: ROM Analysis &amp; Game Genie Code Development",
+        
+        description: "Dynamic analysis of NES ROMs using the Mesen debugger — reversing collision detection, timer logic, PRNG-based entity spawning, and developing stable Game Genie codes.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/MolaMola/blog/2025/nes-reverse-engineering/";
+          
+        },
+      },{id: "post-authorized-black-box-penetration-test-rce-amp-sqli-on-a-public-facing-visa-platform",
+        
+          title: "Authorized Black-Box Penetration Test: RCE &amp; SQLi on a Public-Facing Visa Platform",
+        
+        description: "An authorized black-box security assessment of a public visa information platform — discovering a critical RCE vulnerability in the CMS and multiple SQL injection vectors.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/MolaMola/blog/2025/web-pentest/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
