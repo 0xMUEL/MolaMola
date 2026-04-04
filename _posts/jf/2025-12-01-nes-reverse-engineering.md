@@ -3,7 +3,7 @@ layout: post
 title: "NES Game Reverse Engineering: ROM Analysis & Game Genie Code Development"
 date: 2025-12-01
 author: JuicyForgJF
-tags: [jf, reverse-engineering, nes, 6502, game-hacking]
+tags: [jf, reverse-engineering, nes, "6502", game-hacking]
 categories: [jf]
 description: Dynamic analysis of NES ROMs using the Mesen debugger — reversing collision detection, timer logic, PRNG-based entity spawning, and developing stable Game Genie codes.
 ---
