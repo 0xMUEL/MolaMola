@@ -1,0 +1,47 @@
+# People data for the Mola Mola site
+
+jf:
+  handle: JuicyForgJF
+  name: Fish
+  full_name: Xin Zhang
+  email: xinzhan3@andrew.cmu.edu
+  github: JuicyForgJF
+  bio: >
+    Security researcher, CTF player, and developer.
+    I enjoy breaking things to understand how they work.
+  tagline: "hack the planet 🐟"
+  color: "#06D6A0"
+  color_dark: "#028A6E"
+  avatar: jf_avatar.png
+  sections:
+    - label: About
+      url: /jf/
+    - label: CV
+      url: /jf/cv/
+    - label: Projects
+      url: /jf/projects/
+    - label: Blog
+      url: /jf/blog/
+
+bbq:
+  handle: AmazonBBQ
+  name: BBQ
+  full_name: Your Friend
+  email: friend@example.com
+  github: AmazonBBQ
+  bio: >
+    Security researcher and CTF enthusiast.
+    Always cooking up something interesting.
+  tagline: "always grilling 🔥"
+  color: "#FF9F1C"
+  color_dark: "#C47800"
+  avatar: bbq_avatar.png
+  sections:
+    - label: About
+      url: /bbq/
+    - label: CV
+      url: /bbq/cv/
+    - label: Projects
+      url: /bbq/projects/
+    - label: Blog
+      url: /bbq/blog/

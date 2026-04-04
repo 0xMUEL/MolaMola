@@ -1,0 +1,218 @@
+/*******************************************************************************
+ * Ocean Theme — Bright Ocean palette for Mola Mola site
+ * Applied to section pages (JF, BBQ, CTF, etc.)
+ ******************************************************************************/
+
+// ── CSS custom properties (section pages only, not landing)
+[data-section] {
+  --ocean-dark:   #0096C7;
+  --ocean-mid:    #48CAE4;
+  --ocean-light:  #ADE8F4;
+  --ocean-foam:   #e8f8fd;
+  --ocean-deep:   #023E8A;
+  --jf-color:     #06D6A0;
+  --jf-dark:      #028A6E;
+  --bbq-color:    #FF9F1C;
+  --bbq-dark:     #C47800;
+}
+
+// ── Section navbar styles
+.section-navbar {
+  background: #ffffff !important;
+  border-bottom: 3px solid;
+  box-shadow: 0 2px 20px rgba(0, 150, 199, 0.12);
+
+  &.section-jf  { border-bottom-color: var(--jf-color, #06D6A0); }
+  &.section-bbq { border-bottom-color: var(--bbq-color, #FF9F1C); }
+  &.section-shared { border-bottom-color: var(--ocean-dark, #0096C7); }
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #023E8A !important;
+    letter-spacing: -0.3px;
+
+    .brand-home {
+      opacity: 0.6;
+      font-size: 0.8rem;
+      margin-right: 4px;
+    }
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: #1a3a5c !important;
+    transition: color 0.2s;
+
+    &:hover, &.active { color: var(--ocean-dark, #0096C7) !important; }
+  }
+
+  .nav-divider {
+    width: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 6px 8px;
+    align-self: stretch;
+  }
+
+  .crosslink-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+
+    &.pill-jf {
+      color: #028A6E;
+      border-color: #06D6A0;
+      background: rgba(6,214,160,0.08);
+      &:hover { background: rgba(6,214,160,0.18); }
+    }
+
+    &.pill-bbq {
+      color: #C47800;
+      border-color: #FF9F1C;
+      background: rgba(255,159,28,0.08);
+      &:hover { background: rgba(255,159,28,0.18); }
+    }
+
+    &.pill-ctf {
+      color: #023E8A;
+      border-color: #0096C7;
+      background: rgba(0,150,199,0.08);
+      &:hover { background: rgba(0,150,199,0.18); }
+    }
+  }
+}
+
+// ── Person section page hero
+.person-hero {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f4fd 100%);
+  border-bottom: 1px solid rgba(0,150,199,0.15);
+  padding: 60px 0 40px;
+
+  &.hero-jf  { background: linear-gradient(135deg, #f0fdf9 0%, #d4fef3 100%); }
+  &.hero-bbq { background: linear-gradient(135deg, #fffbf0 0%, #fff3d0 100%); }
+
+  .person-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  }
+
+  .person-avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+
+    &.avatar-jf  { background: linear-gradient(135deg, #06D6A0, #02C9A0); }
+    &.avatar-bbq { background: linear-gradient(135deg, #FF9F1C, #FF6B35); }
+  }
+
+  .person-name {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #023E8A;
+    margin-bottom: 6px;
+
+    .person-handle {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #5a7a8a;
+      display: block;
+      margin-top: 2px;
+    }
+  }
+
+  .person-tagline {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: #0077A8;
+    margin-bottom: 16px;
+  }
+}
+
+// ── Section content wrapper
+.section-content {
+  padding: 40px 0;
+  min-height: 60vh;
+}
+
+// ── Wave footer decoration
+.section-wave-footer {
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 60px;
+
+  svg { display: block; width: 100%; }
+}
+
+// ── CTF Writeup list
+.ctf-writeup-item {
+  border-left: 4px solid var(--ocean-dark, #0096C7);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  background: #f8fcff;
+  border-radius: 0 12px 12px 0;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #eef8fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(0,150,199,0.1);
+  }
+
+  .ctf-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--ocean-deep, #023E8A);
+    margin-bottom: 4px;
+  }
+
+  .ctf-meta {
+    font-size: 0.82rem;
+    color: #5a7a8a;
+    margin-bottom: 8px;
+  }
+
+  .ctf-tags span {
+    display: inline-block;
+    background: rgba(0,150,199,0.1);
+    color: #0077A8;
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 6px;
+    margin-bottom: 4px;
+  }
+}
+
+// ── Override global theme color for section pages
+[data-section="jf"] {
+  --global-theme-color: #{#06D6A0};
+  --global-hover-color: #{#06D6A0};
+}
+
+[data-section="bbq"] {
+  --global-theme-color: #{#FF9F1C};
+  --global-hover-color: #{#FF9F1C};
+}
+
+[data-section="shared"] {
+  --global-theme-color: #{#0096C7};
+  --global-hover-color: #{#0096C7};
+}

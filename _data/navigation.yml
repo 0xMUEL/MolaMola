@@ -1,0 +1,55 @@
+# Section-based navigation for Mola Mola site
+# Each section key corresponds to page.section front matter
+
+jf:
+  brand: "🌊 Mola Mola"
+  brand_url: /
+  person_label: "🐟 JuicyForgJF"
+  items:
+    - title: About
+      url: /jf/
+    - title: CV
+      url: /jf/cv/
+    - title: Projects
+      url: /jf/projects/
+    - title: Blog
+      url: /jf/blog/
+  crosslinks:
+    - title: "🔥 AmazonBBQ"
+      url: /bbq/
+    - title: "🏴 CTF"
+      url: /ctf/
+
+bbq:
+  brand: "🌊 Mola Mola"
+  brand_url: /
+  person_label: "🔥 AmazonBBQ"
+  items:
+    - title: About
+      url: /bbq/
+    - title: CV
+      url: /bbq/cv/
+    - title: Projects
+      url: /bbq/projects/
+    - title: Blog
+      url: /bbq/blog/
+  crosslinks:
+    - title: "🐟 JuicyForgJF"
+      url: /jf/
+    - title: "🏴 CTF"
+      url: /ctf/
+
+shared:
+  brand: "🌊 Mola Mola"
+  brand_url: /
+  person_label: "🤝 Shared"
+  items:
+    - title: CTF Writeups
+      url: /ctf/
+    - title: Collab Projects
+      url: /collab/
+  crosslinks:
+    - title: "🐟 JuicyForgJF"
+      url: /jf/
+    - title: "🔥 AmazonBBQ"
+      url: /bbq/
