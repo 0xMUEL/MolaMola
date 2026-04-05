@@ -72,7 +72,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/MolaMola/blog/";
               },
-            },{id: "post-building-an-open-source-automated-llm-red-teaming-framework",
+            },{id: "post-多智能体红队测试中的指令溢出与状态一致性挑战-从-元越狱-到双脑架构",
+        
+          title: "多智能体红队测试中的指令溢出与状态一致性挑战：从「元越狱」到双脑架构",
+        
+        description: "分析多智能体红队系统中「元指令回声室效应」的形成机制，以及 Attacker 在长程博弈中发生角色坍缩的底层原因，并提出 Manager-Actor 双脑解耦架构作为终极防御方案。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/MolaMola/blog/2026/manager-actor-dual-brain/";
+          
+        },
+      },{id: "post-多智能体红队测试中的-元越狱-与指令溢出-案例分析与缓解策略",
+        
+          title: "多智能体红队测试中的「元越狱」与指令溢出：案例分析与缓解策略",
+        
+        description: "通过一次真实的「乌龙越狱」案例，深度剖析目标模型如何通过拾取攻击者泄露的 System Prompt 实现「元越狱」，并探讨基于 LLM-as-a-Judge 的元危害盲区问题与工业级修复方案。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/MolaMola/blog/2026/meta-jailbreak-multi-agent/";
+          
+        },
+      },{id: "post-building-an-open-source-automated-llm-red-teaming-framework",
         
           title: "Building an Open-Source Automated LLM Red-Teaming Framework",
         
