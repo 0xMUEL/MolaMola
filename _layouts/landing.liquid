@@ -306,7 +306,7 @@
         gap: 20px;
         justify-content: center;
         flex-wrap: wrap;
-        max-width: 700px;
+        max-width: 1000px;
         margin: 0 auto;
       }
 
@@ -458,6 +458,11 @@
         <p class="shared-desc">When two fish team up — joint CTF writeups and collaborative projects.</p>
 
         <div class="shared-cards">
+          <a class="shared-card" href="{{ '/posts/' | relative_url }}">
+            <span class="shared-card-icon">📝</span>
+            <div class="shared-card-title">All Posts</div>
+            <div class="shared-card-desc">Every write-up and research note from both of us — filter by author, newest first.</div>
+          </a>
           <a class="shared-card" href="{{ '/ctf/' | relative_url }}">
             <span class="shared-card-icon">🏴</span>
             <div class="shared-card-title">CTF Writeups</div>
