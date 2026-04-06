@@ -21,6 +21,26 @@ Project write-ups, research notes, and things worth sharing.
 
 <div style="display:grid;gap:20px;margin:24px 0;">
 
+  <!-- Post: First Principles LLM Security -->
+  <a href="{{ '/blog/2026/first-principles-llm-security/' | relative_url }}" style="text-decoration:none;color:inherit;">
+  <div style="border-left:4px solid #06D6A0;padding:22px 24px;background:#f0fdf9;border-radius:0 14px 14px 0;transition:all 0.2s ease;cursor:pointer;" onmouseover="this.style.transform='translateX(4px)';this.style.boxShadow='0 4px 20px rgba(6,214,160,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+      <h3 style="margin:0;color:#023E8A;font-size:1.05rem;">⚛️ 降维打击：基于第一性原理的 LLM 安全与对抗架构演进</h3>
+      <span style="color:#5a7a8a;font-size:0.8rem;white-space:nowrap;">Apr 2026</span>
+    </div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+      <span style="background:rgba(6,214,160,0.15);color:#028A6E;padding:2px 10px;border-radius:12px;font-size:0.72rem;font-weight:600;">AI Security</span>
+      <span style="background:rgba(6,214,160,0.15);color:#028A6E;padding:2px 10px;border-radius:12px;font-size:0.72rem;font-weight:600;">First Principles</span>
+      <span style="background:rgba(6,214,160,0.15);color:#028A6E;padding:2px 10px;border-radius:12px;font-size:0.72rem;font-weight:600;">Repr. Engineering</span>
+      <span style="background:rgba(6,214,160,0.15);color:#028A6E;padding:2px 10px;border-radius:12px;font-size:0.72rem;font-weight:600;">Gradient Attack</span>
+    </div>
+    <p style="margin:0;color:#3a5a6a;font-size:0.9rem;line-height:1.6;">
+      从 Next-Token Prediction、向量空间与自注意力机制的第一性原理出发，剖析 GCG 梯度攻击、RepE 表示工程干预和 Attention DoS 三大下一代攻击向量，并提出白盒沙盒 → 黑盒转移的 V2 架构及对应防御思路。
+    </p>
+    <div style="margin-top:10px;color:#06D6A0;font-size:0.85rem;font-weight:600;">Read post →</div>
+  </div>
+  </a>
+
   <!-- Post: Meta-Jailbreak -->
   <a href="{{ '/blog/2026/meta-jailbreak-multi-agent/' | relative_url }}" style="text-decoration:none;color:inherit;">
   <div style="border-left:4px solid #06D6A0;padding:22px 24px;background:#f0fdf9;border-radius:0 14px 14px 0;transition:all 0.2s ease;cursor:pointer;" onmouseover="this.style.transform='translateX(4px)';this.style.boxShadow='0 4px 20px rgba(6,214,160,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">

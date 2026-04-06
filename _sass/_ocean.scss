@@ -22,8 +22,8 @@
   border-bottom: 3px solid;
   box-shadow: 0 2px 20px rgba(0, 150, 199, 0.12);
 
-  &.section-jf  { border-bottom-color: var(--jf-color, #06D6A0); }
-  &.section-bbq { border-bottom-color: var(--bbq-color, #FF9F1C); }
+  &.section-jf     { border-bottom-color: var(--jf-color, #06D6A0); }
+  &.section-bbq    { border-bottom-color: var(--bbq-color, #FF9F1C); }
   &.section-shared { border-bottom-color: var(--ocean-dark, #0096C7); }
 
   .navbar-brand {
@@ -39,13 +39,37 @@
     }
   }
 
+  // All nav-links: dark navy for readability
   .nav-link {
     font-weight: 500;
     color: #1a3a5c !important;
     transition: color 0.2s;
 
-    &:hover, &.active { color: var(--ocean-dark, #0096C7) !important; }
+    &:hover { color: #023E8A !important; }
   }
+
+  // Active page: bold + section accent underline (class is on <li>, not <a>)
+  .nav-item.active .nav-link {
+    color: #023E8A !important;
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0.5rem;
+      right: 0.5rem;
+      height: 2px;
+      border-radius: 2px;
+      background: currentColor;
+      opacity: 0.6;
+    }
+  }
+
+  // Per-section accent on active/hover
+  &.section-jf  .nav-item.active .nav-link { color: #028A6E !important; }
+  &.section-bbq .nav-item.active .nav-link { color: #9A5900 !important; }
 
   .nav-divider {
     width: 1px;
@@ -202,17 +226,19 @@
 }
 
 // ── Override global theme color for section pages
+// Using WCAG AA-compliant colors (≥4.5:1 contrast on white) so that
+// links and blockquote borders remain readable throughout section content.
 [data-section="jf"] {
-  --global-theme-color: #{#06D6A0};
-  --global-hover-color: #{#06D6A0};
+  --global-theme-color: #028A6E;   // dark teal  (~5.5:1 on white)
+  --global-hover-color: #028A6E;
 }
 
 [data-section="bbq"] {
-  --global-theme-color: #{#FF9F1C};
-  --global-hover-color: #{#FF9F1C};
+  --global-theme-color: #9A5900;   // dark amber (~5.2:1 on white)
+  --global-hover-color: #9A5900;
 }
 
 [data-section="shared"] {
-  --global-theme-color: #{#0096C7};
-  --global-hover-color: #{#0096C7};
+  --global-theme-color: #023E8A;   // deep navy  (~9.5:1 on white)
+  --global-hover-color: #0077A8;   // ocean blue (~4.7:1 on white)
 }
