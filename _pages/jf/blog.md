@@ -25,7 +25,7 @@ Project write-ups, research notes, and things worth sharing.
   <a href="{{ '/blog/2026/first-principles-llm-security/' | relative_url }}" style="text-decoration:none;color:inherit;">
   <div style="border-left:4px solid #06D6A0;padding:22px 24px;background:#f0fdf9;border-radius:0 14px 14px 0;transition:all 0.2s ease;cursor:pointer;" onmouseover="this.style.transform='translateX(4px)';this.style.boxShadow='0 4px 20px rgba(6,214,160,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-      <h3 style="margin:0;color:#023E8A;font-size:1.05rem;">⚛️ 降维打击：基于第一性原理的 LLM 安全与对抗架构演进</h3>
+      <h3 style="margin:0;color:#023E8A;font-size:1.05rem;">⚛️ 基于第一性原理的 LLM 安全与对抗架构演进</h3>
       <span style="color:#5a7a8a;font-size:0.8rem;white-space:nowrap;">Apr 2026</span>
     </div>
     <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
